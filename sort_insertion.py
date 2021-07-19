@@ -1,5 +1,5 @@
 # O(n^2)
-def insertion_sort(arr: list) -> list:
+def sort_insertion(arr: list) -> list:
     for j in range(1, len(arr)):
         key = arr[j]
         i = j - 1

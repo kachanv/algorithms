@@ -1,16 +1,16 @@
 # O(n*lg(n))
-def merge_sort(arr: list) -> list:
+def sort_merge(arr: list) -> list:
     if len(arr) > 1:
         mid = len(arr) // 2
         left = arr[:mid]
         right = arr[mid:]
         i, j, k = 0, 0, 0 # i-left counter, j-right counter, k- main unit counter
 
-        merge_sort(left)  # recursion work because list is mutable type
-        merge_sort(right) # row 8-9 divide & union part of solution
+        sort_merge(left)  # recursion work because list is mutable type
+        sort_merge(right) # row 8-9 divide & union part of solution
 
         while i < len(left) and j < len(right):
-            if left[i] <= right[j]:
+            if left[i] <= right[j]: # left[i] >= right[j] - arr will be sorting desc
                 arr[k] = left[i]
                 i += 1
             else:
