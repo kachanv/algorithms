@@ -21,7 +21,7 @@ def max_heapify(arr: list, i: int, heap_size: int) -> list:  # binary-heap test 
 # O(n)
 def build_binary_max_heap(arr: list) -> list:  # build binary-heap from list
     heap_size = len(arr)
-    for i in range(len(arr) // 2 - 1, -1, -1):
+    for i in range(heap_size // 2 - 1, -1, -1):
         max_heapify(arr, i, heap_size)
 
     return arr
@@ -38,3 +38,4 @@ def sort_heap(arr: list) -> list:
         max_heapify(arr, 0, heap_size)  # place swap-element to new correct position
 
     return arr
+

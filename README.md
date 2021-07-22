@@ -9,6 +9,8 @@
 
 **sort_quick.py** - [quicksort with random index of the pivot](https://en.wikipedia.org/wiki/Quicksort)
 
+**sort_bucket.py** - [bucket sort](https://en.wikipedia.org/wiki/Bucket_sort)
+
 **max_subarray_recursion.py** - [find max subarray by "divide and conquer"](https://www.codesdope.com/blog/article/maximum-subarray-sum-using-divide-and-conquer)
 
 **max_subarray_kadane.py** - [find max subarray by Kadane's algorithm](https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm)
