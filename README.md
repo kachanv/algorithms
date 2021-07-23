@@ -14,3 +14,5 @@
 **max_subarray_recursion.py** - [find max subarray by "divide and conquer"](https://www.codesdope.com/blog/article/maximum-subarray-sum-using-divide-and-conquer)
 
 **max_subarray_kadane.py** - [find max subarray by Kadane's algorithm](https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm)
+
+**select_quick.py** - [find the kth smallest element in an unordered list by "divide and conquer"](https://en.wikipedia.org/wiki/Quickselect)
