@@ -16,3 +16,5 @@
 **max_subarray_kadane.py** - [find max subarray by Kadane's algorithm](https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm)
 
 **select_quick.py** - [find the kth smallest element in an unordered list by "divide and conquer"](https://en.wikipedia.org/wiki/Quickselect)
+
+**tree_binary_search.py** - [search, insert, delete, min, max, successor, predecessor and transplant by binary search tree](https://en.wikipedia.org/wiki/Binary_search_tree)

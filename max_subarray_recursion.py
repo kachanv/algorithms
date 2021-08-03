@@ -38,5 +38,3 @@ def max_subarray_recursion(arr: list, low: int, high: int) -> list:
         return [right_low, right_high, right_sum]
     else:
         return [cross_low, cross_high, cross_sum]
-
-arr = [1,-3,  9,2,-5,0,4,-2, 1]

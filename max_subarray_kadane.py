@@ -1,6 +1,6 @@
 # O(n)
 def max_subarray_kadane(arr: list) -> list:
-    cur_sum, cur_min, cur_max = 0 , 0, 0 # var for current values
+    cur_sum, cur_min, cur_max = 0, 0, 0 # var for current values
     best_sum, best_min, best_max = float('-inf'), 0, 0 # buffer var for result_values
 
     for i, n in enumerate(arr): # iter arr

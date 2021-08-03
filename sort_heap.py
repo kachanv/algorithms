@@ -38,4 +38,3 @@ def sort_heap(arr: list) -> list:
         max_heapify(arr, 0, heap_size)  # place swap-element to new correct position
 
     return arr
-
