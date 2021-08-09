@@ -15,6 +15,10 @@
 
 **max_subarray_kadane.py** - [find max subarray by Kadane's algorithm](https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm)
 
+**search_two_sum.py** [search for elements by their sum through a hash table](https://levelup.gitconnected.com/two-sum-interview-problem-in-python-c1d84b029d35)
+
 **select_quick.py** - [find the kth smallest element in an unordered list by "divide and conquer"](https://en.wikipedia.org/wiki/Quickselect)
 
-**tree_binary_search.py** - [search, insert, delete, min, max, successor, predecessor and transplant by binary search tree](https://en.wikipedia.org/wiki/Binary_search_tree)
+**tree_binary_search.py** - [search, insert, delete, min, max, successor, predecessor, left/right rotate and transplant for binary search tree](https://en.wikipedia.org/wiki/Binary_search_tree)
+
+**tree_red_black.py** - [insert for red-black tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree#History)

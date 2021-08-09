@@ -4,11 +4,12 @@ from itertools import count
 class Node(object):
     _ids = count(1)
 
-    def __init__(self, value, l_child=None, r_child=None, parent=None):
+    def __init__(self, value, l_child=None, r_child=None, parent=None, color=None):
         self.value = value
         self.l_child = l_child
         self.r_child = r_child
         self.parent = parent
+        self.color = color
         self.id = next(self._ids)
 
     def is_root(self):

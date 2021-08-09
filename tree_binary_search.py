@@ -116,6 +116,24 @@ def delete_node_bst(tree: Tree, node: Node):
         y.l_child.parent = y
 
 
+# O(1)
+def left_rotate_bst(tree: Tree, node: Node):
+    if node.check_r_child():
+        y = node.r_child
+        node.r_child = y.l_child
+        if y.check_l_child():
+            y.l_child.parent = node
+        y.parent = node.parent
+        if node.is_root():
+            tree.root = y
+        elif node.parent.l_child is node:
+            node.parent.l_child = y
+        else:
+            node.parent.r_child = y
+        y.l_child = node
+        node.parent = y
+
+
 # test bst
 node_5, node_3, node_7, node_2, node_4, node_6, node_9, node_1, node_8, node_10 = create_bst()
 tree = Tree(root=node_5)
@@ -124,16 +142,16 @@ node_11 = Node(value=85)
 node_12 = Node(value=5)
 
 print(
-    """    
+    r"""    
     Binary search tree
                    50(5)
-                  /     \\
+                  /     \
               30(3)      70(7)
-              /   \     /    \\
+              /   \     /    \
           20(2) 40(4)  60(6) 90(9)
-           /                 /    \\
+           /                 /    \
          10(1)            80(8)   100(10)
-         /                  \\
+         /                  \
         5(12 insert)         85(11 insert/delete)
     """
 )
@@ -155,5 +173,8 @@ insert_node_bst(tree, node_11)
 insert_node_bst(tree, node_12)
 node_11.print_node()
 node_12.print_node()
-print('delete 11-th node')
+print('- delete 11-th node')
 delete_node_bst(tree, node_11)
+print('- left rotate from 9-th node')
+left_rotate_bst(tree, node_9)
+print_subtree(node_5)
